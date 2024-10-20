@@ -1,0 +1,28 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column{
+    flex: 25%;
+}
+.column img{
+    width: 100%;
+    filter: grayscale(60%);
+}
+.column img:hover{
+    filter: none;
+}
+/*Mobile  -> 576px
+Tablet  -> 768px
+Laptop  -> 992px
+Desktop -> 1200px */
+@media screen and (max-width: 800px){
+    .column{
+        flex: 50%;
+    }
+}
+@media screen and (max-width: 600px){
+    .column{
+        flex:100%;
+    }
+}
